@@ -5,7 +5,10 @@ target = random.randint(1,100)
 
 
 while True:
-    usr_num = int(input("Guess a Number :"))
+    usr_num = input("Guess a Number or Quite :")
+    if usr_num == "Quite":
+        break
+    usr_num = int(usr_num)
     if usr_num == target:
         print("Success : Correct Guess !!")
         break
